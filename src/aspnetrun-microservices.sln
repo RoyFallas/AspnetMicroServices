@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{499889BB-DDB2-4917-ADDA-FB0C9C00975E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{E4A5485A-9C43-4897-900B-AC86596A74BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Catalog.API\Catalog.API.csproj", "{B2711376-FFAF-498C-8343-4FBCA02FE684}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{912689C3-4E49-47A4-A066-C978C49F859C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2711376-FFAF-498C-8343-4FBCA02FE684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2711376-FFAF-498C-8343-4FBCA02FE684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2711376-FFAF-498C-8343-4FBCA02FE684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2711376-FFAF-498C-8343-4FBCA02FE684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{912689C3-4E49-47A4-A066-C978C49F859C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912689C3-4E49-47A4-A066-C978C49F859C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912689C3-4E49-47A4-A066-C978C49F859C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912689C3-4E49-47A4-A066-C978C49F859C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4A5485A-9C43-4897-900B-AC86596A74BE} = {499889BB-DDB2-4917-ADDA-FB0C9C00975E}
+		{B2711376-FFAF-498C-8343-4FBCA02FE684} = {E4A5485A-9C43-4897-900B-AC86596A74BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16F1938A-F212-472D-B442-0C7DEF0EF5EE}
